@@ -31,14 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
       webUrl = `No webpage available for ${brewery.name}.`
     }
     newBrewery.innerHTML = `
-    <p>NAME: ${brewery.name}</p>
-    <p>ADDRESS: ${brewery.street} ${brewery.city},  ${brewery.state}, ${brewery.postal_code}</p>
-    <p>PHONE: ${brewery.phone}</p>
-    <p>${webUrl}</p>
-    <button class="btn-success">Like</button>
-    <button class="btn-danger">Delete</button>
-    <button class="btn-comment">Comment</button>
-    `;
+      <h3 class="title-brews">${brewery.name}</h3>
+      <p class="address-brews">Address: ${brewery.street} ${brewery.city},  ${brewery.state}, ${brewery.postal_code}</p>
+      <p class="phone-brews">Phone: ${brewery.phone}</p>
+      <p class="website-brews">${webUrl}</p>
+      <button class="btn-success">Like</button>
+      <button class="btn-danger">Delete</button>
+      <button class="btn-comment">Comment</button>
+      `;
 
     breweryList.append(newBrewery);
   }
