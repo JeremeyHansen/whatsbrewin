@@ -2,9 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const breweryList = document.getElementById("brewery-container");
   const breweryForm = document.querySelector("form");
   breweryForm.addEventListener("submit", (e) => {
-    let search = document.getElementById('search')
+    let search = document.getElementById('search').value;
+    let newSearch = search.replace(" ", "_");
     e.preventDefault();
-    fetch(`https://api.openbrewerydb.org/breweries?by_city=${search.value}&per_page=10`)
+    fetch(`https://api.openbrewerydb.org/breweries?by_city=${newSearch}&per_page=10`)
       .then((response) => response.json())
       .then((data) => {
         breweries = data;
