@@ -1,19 +1,32 @@
 body {
   text-align: center;
+  background-image: url("https://t4.ftcdn.net/jpg/02/88/06/53/360_F_288065351_RvSdqWK2YlX8zVdCNA7MukWLfTXSyR7F.jpg");
 }
 
-/* .title-brews {
+.title-brews {
   padding: 15px;
-  color: orange;
+  color: gold;
   font-weight: 800;
   text-decoration: underline;
 }
 .search-button{
-    background: red;
-    color: white;
+    background: gold;
+    color: brown;
     padding: 6px 12px;
-    border-radius: 6px;
-} */
+    border-radius: 6px; 
+    border: 5px;
+    border-color: brown;
+     border-style: solid;
+}
+.refresh{
+  background: gold;
+  color: brown;
+  padding: 6px 12px;
+  border: 5px;
+  border-color: brown;
+  border-style: solid;
+  border-radius: 6px; */
+}
 #brewery-container{
     color: black;
     border-radius: 6px;
@@ -23,10 +36,12 @@ body {
 .brewery-card{
     padding-top: 10px;
     padding-bottom: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 gold;
     transition: .7s;
     margin-bottom: 20px;
-    border-radius: 7px; /* 5px
+    background-color: white;
+    opacity: 93%;
+    /* border-radius: 7px; 5px
     rounded corners */
     
 }
@@ -34,3 +49,70 @@ body {
 li{ 
     list-style-type: none;
   }
+
+.header{
+  background: gold;
+  color: white;
+  border: 10px;
+  border-color: brown;
+  border-style: solid;
+}
+
+.title-header{
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+.center-pic{
+  width: 30%;
+  height: 30%;
+}
+
+.whats-brewin-title{
+  background-color: white;
+  color: brown;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 500px;
+  margin-right: 500px;
+  border: 10px;
+  border-color: brown;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.btn-success{
+  background: gold;
+    color: brown;
+    padding: 6px 12px;
+    border-radius: 6px; 
+    border: 5px;
+    border-color: brown;
+     border-style: solid;
+}
+
+.btn-danger{
+  background: brown;
+    color: gold;
+    padding: 6px 12px;
+    border-radius: 6px; 
+    border: 2px;
+    border-color: gold;
+    border-style: solid;
+}
+
+.btn-comment{
+  background: gold;
+    color: brown;
+    padding: 6px 12px;
+    border-radius: 6px; 
+    border: 5px;
+    border-color: brown;
+     border-style: solid;
+}
+
+.footer-img{
+  background-color: white;
+  padding-inline: 100px;
+}

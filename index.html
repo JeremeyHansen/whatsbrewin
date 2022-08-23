@@ -8,18 +8,27 @@
   <link rel='stylesheet' href='index.css'/>
 </head>
 <body>
+  <header class="header">
+    <div> 
+      <h2 class="title-header">"Trust me, you can dance." – Beer</h2>
+    </div>
+  </header>
   <div id='main'>
-    <img src="https://cliply.co/wp-content/uploads/2019/07/371907850_BEER_TOAST_400x400.gif"></img>
-    <h2>What's Brewin'?</h2>
+    <img class="center-pic" src="https://acegif.com/wp-content/uploads/gif/beer-36.gif"></img>
+    <h2 class="whats-brewin-title">What's Brewin'?</h2>
+    <!-- <h4>Enter City Below</h4> -->
     <form id='breweryForm' class="searchBar">
-      <input id='search' type='text' name='search'>
+      <input class="search-button" id='search' type='text' name='search' placeholder="Enter City Here">
       <input class="search-button" type='submit' name='brew'/>
-      <button onclick="window.location.reload();">New Search</button>
+      <button class="refresh" onclick="window.location.reload();">New Search</button>
     </form>
     <div id='brewery-container'>
       <ul id='brewery-list'>  
       </ul>
     </div>
   </div>
+  <footer>
+    <img class="footer-img" src="https://thumbs.gfycat.com/ReadyDeliciousCrocodile-max-1mb.gif"></img>
+  </footer>
 </body>
 </html>
