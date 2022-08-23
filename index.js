@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let search = document.getElementById('search').value;
     let newSearch = search.replace(" ", "_");
     e.preventDefault();
-    fetch(`https://api.openbrewerydb.org/breweries?by_city=${newSearch}&per_page=10`)
+    fetch(`https://api.openbrewerydb.org/breweries?by_city=${newSearch}&per_page=50`)
       .then((response) => response.json())
       .then((data) => {
         breweries = data;
