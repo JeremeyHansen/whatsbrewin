@@ -25,18 +25,20 @@ document.addEventListener("DOMContentLoaded", () => {
     if (brewery.phone === null) {
       brewery.phone = `No phone number available for ${brewery.name}.`
     }
+
+    let webUrl = `<a href="${brewery.website_url}">${brewery.website_url}</a>`
     if (brewery.website_url === null) {
-      brewery.website_url = `No webpage available for ${brewery.name}.`
+      webUrl = `No webpage available for ${brewery.name}.`
     }
     newBrewery.innerHTML = `
-            <p>NAME: ${brewery.name}</p>
-            <p>ADDRESS: ${brewery.street} ${brewery.city},  ${brewery.state}, ${brewery.postal_code}</p>
-            <p>PHONE: ${brewery.phone}</p>
-            <p>WEBSITE: ${brewery.website_url}</p>
-            <button class='btn-success'>Like</button>
-            <button class='btn-danger'>Delete</button>
-            <button class='btn-comment'>Comment</button>
-            `;
+    <p>NAME: ${brewery.name}</p>
+    <p>ADDRESS: ${brewery.street} ${brewery.city},  ${brewery.state}, ${brewery.postal_code}</p>
+    <p>PHONE: ${brewery.phone}</p>
+    <p>${webUrl}</p>
+    <button class="btn-success">Like</button>
+    <button class="btn-danger">Delete</button>
+    <button class="btn-comment">Comment</button>
+    `;
 
     breweryList.append(newBrewery);
   }
