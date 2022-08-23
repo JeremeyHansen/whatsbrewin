@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const newBrewery = document.createElement("li");
     newBrewery.setAttribute("class", "brewery-card");
     newBrewery.setAttribute("data-set-id", `${brewery.id}`);
+    if (brewery.phone === null) {
+      brewery.phone = `No phone number available for ${brewery.name}.`
+    }
+    if (brewery.website_url === null) {
+      brewery.website_url = `No webpage available for ${brewery.name}.`
+    }
     newBrewery.innerHTML = `
             <p>NAME: ${brewery.name}</p>
             <p>ADDRESS: ${brewery.street} ${brewery.city},  ${brewery.state}, ${brewery.postal_code}</p>
@@ -31,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <button class='btn-danger'>Delete</button>
             <button class='btn-comment'>Comment</button>
             `;
+
     breweryList.append(newBrewery);
   }
 });
