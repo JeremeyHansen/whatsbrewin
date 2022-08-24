@@ -1,6 +1,8 @@
 body {
   text-align: center;
+  font-family: Courier New;
   background-image: url("https://t4.ftcdn.net/jpg/02/88/06/53/360_F_288065351_RvSdqWK2YlX8zVdCNA7MukWLfTXSyR7F.jpg");
+  backdrop-filter: blur(7px);
 }
 
 .title-brews {
@@ -9,68 +11,72 @@ body {
   font-weight: 800;
   text-decoration: underline;
 }
-.search-button{
-    background: gold;
-    color: brown;
-    padding: 6px 12px;
-    border-radius: 6px; 
-    border: 5px;
-    border-color: brown;
-     border-style: solid;
+.search-button {
+  font-family: Courier New;
+  background: gold;
+  color: brown;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 5px;
+  border-color: brown;
+  border-style: solid;
 }
-.refresh{
+.refresh {
+  font-family: Courier New;
   background: gold;
   color: brown;
   padding: 6px 12px;
   border: 5px;
   border-color: brown;
   border-style: solid;
-  border-radius: 6px; */
+  border-radius: 6px;
 }
-#brewery-container{
-    color: black;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
+#brewery-container {
+  color: black;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
 }
-.brewery-card{
-    padding-top: 10px;
-    padding-bottom: 30px;
-    box-shadow: 0 4px 8px 0 gold;
-    transition: .7s;
-    margin-bottom: 20px;
-    background-color: white;
-    opacity: 93%;
-    /* border-radius: 7px; 5px
+.brewery-card {
+  font-family: Courier New;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 8px 0 gold;
+  transition: 0.7s;
+  margin-bottom: 20px;
+  background-color: white;
+  opacity: 85%;
+  /* border-radius: 7px; 5px
     rounded corners */
-    
 }
 
-li{ 
-    list-style-type: none;
-  }
+li {
+  list-style-type: none;
+}
 
-.header{
+.header {
   background: gold;
   color: white;
   border: 10px;
   border-color: brown;
   border-style: solid;
+  border-radius: 6px;
+
 }
 
-.title-header{
-  font-family: "San Francisco";
+.title-header {
+  font-family: Courier New;
   font-weight: 400;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
-.center-pic{
-  width: 30%;
-  height: 30%;
+.center-pic {
+  width: 25%;
+  height: 25%;
 }
 
-.whats-brewin-title{
-  background-color: white;
+.whats-brewin-title {
+  background-color: #F8F0E3;
   color: brown;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -82,37 +88,51 @@ li{
   border-radius: 10px;
 }
 
-.btn-success{
+.btn-success {
+  font-family: Courier New;
   background: gold;
-    color: brown;
-    padding: 6px 12px;
-    border-radius: 6px; 
-    border: 5px;
-    border-color: brown;
-     border-style: solid;
+  color: brown;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 5px;
+  border-color: brown;
+  border-style: solid;
 }
 
-.btn-danger{
+.btn-danger {
+  font-family: Courier New;
   background: brown;
-    color: gold;
-    padding: 6px 12px;
-    border-radius: 6px; 
-    border: 2px;
-    border-color: gold;
-    border-style: solid;
+  color: gold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 2px;
+  border-color: gold;
+  border-style: solid;
 }
 
-.btn-comment{
+.btn-comment {
+  font-family: Courier New;
   background: gold;
-    color: brown;
-    padding: 6px 12px;
-    border-radius: 6px; 
-    border: 5px;
-    border-color: brown;
-     border-style: solid;
+  color: brown;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 5px;
+  border-color: brown;
+  border-style: solid;
 }
-
-.footer-img{
-  background-color: white;
+/* 
+.footer-img {
   padding-inline: 100px;
+} */
+
+footer {
+  background: gold;
+  color: white;
+  border: 10px;
+  border-color: brown;
+  border-style: solid;
+  border-radius: 6px;
+  font-family: Courier;
+
+
 }

@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   buildBrews()
+  const titleBox = document.getElementById('title-box')
+  titleBox.addEventListener('click', messagePopUp);
+
+  function messagePopUp(e){
+    e.preventDefault();
+    alert('Enter Your City Below To Find Some Beers')
+  }
 });
 
 
@@ -20,7 +27,7 @@ function buildBrews(){
 
 
 function resetBreweries() {
-  breweries.forEach((brewery) => {
+  breweries.map((brewery) => {
     renderBreweries(brewery);
   });
 }
@@ -43,7 +50,7 @@ function renderBreweries(brewery) {
     <p class="address-brews">Address: ${brewery.street} ${brewery.city},  ${brewery.state}, ${brewery.postal_code}</p>
     <p class="phone-brews">Phone: ${brewery.phone}</p>
     <p class="website-brews">${webUrl}</p>
-    <button class="btn-success">Like</button>
+    <button class="btn-success" onclick="this.style.background = 'red'">Like</button>
     <button class="btn-danger">Already Been Here</button>
     <button class="btn-comment">Comment</button>
     `;
@@ -66,6 +73,15 @@ function handleDelete(event){
   event.target.parentNode.remove();
 }
 
+fetch('http://localhost:3000/brewery', {
+  method: 'POST',
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+              
+});
 // function incrementLike(){
 
 // }
@@ -73,3 +89,4 @@ function handleDelete(event){
 // function handleComment(){
 
 // }
+
