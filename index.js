@@ -34,7 +34,6 @@ function searchBrews() {
         let breweryDataArray = data;
         
         if  (data.length === 0){
-          // alert("No breweries found, please check spelling and try again!");
           changeCenterPic();
         }
         else{

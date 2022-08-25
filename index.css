@@ -9,10 +9,19 @@ body {
 }
 
 .title-brews {
+  margin: auto;
   padding: 15px;
+  width: 50%;
+  border: 5px;
+  border-color: brown;
+  border-style: solid;
+  border-radius: 8px;
+  text-align: center;
   color: gold;
   font-weight: 800;
   text-decoration: underline;
+  box-shadow: 0 4px 8px 0 gold;
+
 }
 .search-button {
   font-family: Courier New;
@@ -23,6 +32,7 @@ body {
   border: 5px;
   border-color: brown;
   border-style: solid;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .refresh {
   font-family: Courier New;
@@ -33,6 +43,7 @@ body {
   border-color: brown;
   border-style: solid;
   border-radius: 6px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 #brewery-container {
   color: black;
@@ -42,13 +53,19 @@ body {
 }
 .brewery-card {
   font-family: Courier New;
-  padding-top: 10px;
+  padding-top: 40px;
   padding-bottom: 30px;
   box-shadow: 0 4px 8px 0 gold;
   transition: 0.7s;
   margin-bottom: 20px;
   background-color: white;
-  opacity: 85%;
+  opacity: 88%;
+  border: 5px;
+  border-color: brown;
+  border-style: solid;
+  border-radius: 10px;
+  margin-left: 150px;
+  margin-right: 150px;
   /* border-radius: 7px; 5px
     rounded corners */
 }
