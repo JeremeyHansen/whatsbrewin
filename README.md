@@ -27,6 +27,6 @@ $ open index.html
 Now, you're all ready to go!
 
 ## Technologies
-*JavaScript
-*HTML
-*CSS
+* JavaScript
+* HTML
+* CSS
