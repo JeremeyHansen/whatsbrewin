@@ -94,13 +94,16 @@ function renderBreweries(brewery) {
   if (brewery.comment === undefined) {
     brewComment = "";
   }
+  else{
+    brewComment = "Review: " +brewery.comment;
+  }
   newBrewery.innerHTML = `
     <h2 class="title-brews">${brewery.name}</h2>
     <img class="card-image" src="https://thumbs.gfycat.com/PlainVapidGalah-max-1mb.gif"></img>
     <p class="address-brews">Address: ${brewery.street} ${brewery.city},  ${brewery.state}, ${brewery.postal_code}</p>
     <p class="phone-brews">Phone: ${brewery.phone}</p>
     <p class="website-brews">${webUrl}</p>
-    <p class="comment-spot">Review: ${brewComment}</p>
+    <p class="comment-spot">${brewComment}</p>
     <input class="comment-input" type="text" placeholder="Leave a Review"/>
     <button class="btn-success" onclick="this.style.background = 'red'">Like</button>
     <button class="btn-danger">Already Been Here</button>
@@ -139,7 +142,7 @@ function handleDelete(event) {
 const titleBox = document.getElementById("title-box");
 titleBox.addEventListener("mouseover", (e) => {
   e.preventDefault();
-  document.getElementById('title-box').innerText = "BEERS DUH"
+  document.getElementById('title-box').innerText = "BEERS DUH ~(˘▾˘~)"
 });
 titleBox.addEventListener("mouseout", (e) => {
   e.preventDefault();
