@@ -86,7 +86,7 @@ function renderBreweries(brewery) {
   if (brewery.phone === null) {
     brewery.phone = `No phone number available for ${brewery.name}.`;
   }
-  let webUrl = `<a href="${brewery.website_url}">Check Out ${brewery.name}'s Website!</a>`;
+  let webUrl = `<a class="url" href="${brewery.website_url}">Check Out ${brewery.name}'s Website!</a>`;
   if (brewery.website_url === null) {
     webUrl = `No webpage available for ${brewery.name}.`;
   }

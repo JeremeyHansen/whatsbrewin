@@ -2,7 +2,10 @@ body {
   text-align: center;
   font-family: Courier New;
   background-image: url("https://t4.ftcdn.net/jpg/02/88/06/53/360_F_288065351_RvSdqWK2YlX8zVdCNA7MukWLfTXSyR7F.jpg");
+  width: 100%;
   backdrop-filter: blur(7px);
+  margin-left: 0;
+  margin-top: 0;
 }
 
 .title-brews {
@@ -127,12 +130,10 @@ li {
   border-color: brown;
   border-style: solid;
 }
-/* 
-.footer-img {
-  padding-inline: 100px;
-} */
+
 
 footer {
+  width: 100%;
   background: linear-gradient(to left, white, gold);;
   color: brown;
   border: 7px;
@@ -162,19 +163,14 @@ footer {
   margin-bottom: 1px;
 }
 
-a {
-  color: red;
-
--webkit-transition: color 0.2s ease-out;
- -moz-transition: color 0.2s ease-out;
- -o-transition: color 0.2s ease-out;
- -ms-transition: color 0.2s ease-out;
- transition: color 0.2s ease-out;
-}
-a:hover {
-   color: blue;
-}
-
 html, body {
   margin: 0;
+ }
+
+ .website-brews{
+  color: brown;
+ }
+
+ .url{
+  color: linear-gradient(to left, brown, gold);;
  }
