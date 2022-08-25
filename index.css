@@ -55,12 +55,19 @@ li {
 }
 
 .header {
-  background: gold;
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(to left, gold, brown);;
   color: white;
-  border: 10px;
+  border: 7px;
   border-color: brown;
-  border-style: solid;
+  border-style:solid;
   border-radius: 6px;
+  /* font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, gold, brown);
+  color: transparent;
+  background-clip: text; */
 
 }
 
@@ -126,11 +133,11 @@ li {
 } */
 
 footer {
-  background: gold;
-  color: white;
-  border: 10px;
+  background: linear-gradient(to left, white, gold);;
+  color: brown;
+  border: 7px;
   border-color: brown;
-  border-style: solid;
+  border-style:solid;
   border-radius: 6px;
   font-family: Courier;
 
@@ -154,3 +161,20 @@ footer {
   margin-top: 1px;
   margin-bottom: 1px;
 }
+
+a {
+  color: red;
+
+-webkit-transition: color 0.2s ease-out;
+ -moz-transition: color 0.2s ease-out;
+ -o-transition: color 0.2s ease-out;
+ -ms-transition: color 0.2s ease-out;
+ transition: color 0.2s ease-out;
+}
+a:hover {
+   color: blue;
+}
+
+html, body {
+  margin: 0;
+ }
