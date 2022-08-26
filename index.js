@@ -4,22 +4,6 @@ let breweries = [];
 
 searchBrews();
 
-//*function to change the center pic if city entered was incorrect
-
-let centerPic = document.querySelector(".center-pic");
-centerPic.setAttribute("src", "https://acegif.com/wp-content/uploads/gif/beer-36.gif");
-function changeCenterPic(){
-    centerPic.setAttribute("src", "https://media0.giphy.com/media/8VEcV7zZZzbjU0P5XT/200w.gif?cid=82a1493b3ye2jmaufawdydlg92fuxnqluvrt9afa62z1h48m&rid=200w.gif&ct=s");
-};
-
-//*function to change the center pic back after
-
-
-function returnCenterPic(){
-  centerPic.setAttribute("src", "https://acegif.com/wp-content/uploads/gif/beer-36.gif");
-};
-
-
 //*function to fetch and grab the brewery info
 
 function searchBrews() {
@@ -59,6 +43,21 @@ function searchBrews() {
     document.getElementById("search").value = "";
   });
 }
+
+//*function to change the center pic if city entered was incorrect
+
+let centerPic = document.querySelector(".center-pic");
+centerPic.setAttribute("src", "https://acegif.com/wp-content/uploads/gif/beer-36.gif");
+function changeCenterPic(){
+    centerPic.setAttribute("src", "https://media0.giphy.com/media/8VEcV7zZZzbjU0P5XT/200w.gif?cid=82a1493b3ye2jmaufawdydlg92fuxnqluvrt9afa62z1h48m&rid=200w.gif&ct=s");
+};
+
+//*function to change the center pic back after
+
+
+function returnCenterPic(){
+  centerPic.setAttribute("src", "https://acegif.com/wp-content/uploads/gif/beer-36.gif");
+};
 
 //*function calling the rendering of the cards
 
