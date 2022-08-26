@@ -1,5 +1,6 @@
-//let breweries = [];
 const breweryForm = document.querySelector("form");
+let breweries = [];
+
 
 searchBrews();
 
@@ -31,7 +32,7 @@ function searchBrews() {
     )
       .then((response) => response.json())
       .then((data) => {
-        let breweryDataArray = data;
+        let breweryData = data;
         
         if  (data.length === 0){
           changeCenterPic();
@@ -39,28 +40,20 @@ function searchBrews() {
         else{
           returnCenterPic()
         }
-
-        let breweriesWithComments = [];
-        
         fetch("http://localhost:3000/brewery")
         .then((response) => response.json())
         .then((comments) => {
-         const breweryIds = breweryDataArray.map(a => a.id)
-         console.log(breweryIds);
+         const breweryIds = breweryData.map(a => a.id)
            for (let breweryId of breweryIds) {
             const commentsForID = comments.find(({ id }) => id === breweryId); //get comments of the specified id
-            let brewery =  breweryDataArray.find(({ id }) => id === breweryId);//get brewery for specified id
-            //console.log("brewery comment",commentsForID);
+            let brewery =  breweryData.find(({ id }) => id === breweryId);//get brewery for specified id
             
             if(commentsForID){
               brewery["comment"] = commentsForID["comment"]
-              // console.log("has comments",brewery)
             }
-            breweriesWithComments.push(brewery)
+            breweries.push(brewery)
           }
-          console.log("breweriesWithComments",breweriesWithComments);
-
-          resetBreweries(breweriesWithComments);
+          resetBreweries(breweries);
         });
       })
     document.getElementById("search").value = "";
@@ -69,8 +62,8 @@ function searchBrews() {
 
 //*function calling the rendering of the cards
 
-function resetBreweries(breweriesWithComments) {
-  breweriesWithComments.map((brewery) => {
+function resetBreweries(breweries) {
+  breweries.map((brewery) => {
     renderBreweries(brewery);
   });
 }
